@@ -42,7 +42,8 @@
 <section class="page hidden" id="page-premium"><div class="hero"><div class="heroCard"><div class="eyebrow">ZENKOO PREMIUM</div><h2>Mai multe opțiuni pentru comunitatea ta.</h2><p>Planurile și prețurile vor fi citite din configurația privată după integrare.</p><div class="mascot">👑</div></div><div class="card"><span class="pill">Premium</span><h2 style="margin-top:12px">Planuri Zenkoo</h2><p class="muted small">Prețurile reale și beneficiile trebuie sincronizate cu sistemul actual din bot.</p><button class="btn primary" id="premiumInfo">Vezi instrucțiunile de plată</button></div></div><div class="note">Nu introduce IBAN-ul în codul frontend public. Îl vom furniza din backend dacă este necesar, iar Premium va fi activat doar după verificarea plății.</div></section>
 <div class="footer">ZENKOO.APP • Dashboard starter • Nu include secrete sau tokenuri în frontend.</div>
 </main></div><div id="toast" class="toast hidden"></div>
-<script src="./config.js"></script>
+<script>window.ZENKOO_API_URL = "https://zenkoo-backend-7zbl.onrender.com";</script>
+<script src="./config.js?v=2"></script>
 <script>
 const API=(window.ZENKOO_API_URL||"").replace(/\/$/,"");
 const names={home:"Overview",servers:"Serverele mele",welcome:"Welcome & Goodbye",automod:"AutoMod & Logs",tickets:"Tickets & JTC",profile:"Profile & Themes",premium:"Premium"};
